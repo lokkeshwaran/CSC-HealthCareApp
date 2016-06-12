@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="andyfolders.com.csc">
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="21" />
+
+    <meta-data
+        android:name="com.google.android.maps.v3.API_KEY"
+        android:value="AIzaSyA3MIQAh0f2Zbgq1HEgOaX-8unVqQ0UQsU" />
+
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Network State Permissions -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!-- Access Location -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="andyfolders.com.csc.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="andyfolders.com.csc.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Add Google Map Library -->
+        <uses-library android:name="com.google.android.maps" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="HealthCare++" />
+        <activity
+            android:name=".FindNearHospital"
+            android:label="NearBy Hospital List" />
+        <activity
+            android:name=".SinglePlaceActivity"
+            android:label="Details" />
+        <activity
+            android:name=".PlacesMapActivity"
+            android:label="Details" />
+        <activity
+            android:name=".FindnearbyPharmacy"
+            android:label="NearBy Pharmacy List" />
+        <activity
+            android:name=".aboutus"
+            android:label="About US" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <service android:name=".GCMNotificationIntentService" />
+
+        <activity
+            android:name=".gcmnotify"
+            android:label="notification"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register"
+            android:screenOrientation="portrait" />
+
+        <receiver
+            android:name=".GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="andyfolders.com.csc" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MainActivitylogin"
+            android:label="HealthCare++"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        android:name=".knowurpolling"
+        android:screenOrientation="portrait" />
+        <activity
+            android:name=".electionupdates"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".book_appoinment"
+            android:label="Book Doctor Appoinment" />
+        <activity
+            android:name=".list_appoinments"
+            android:label="Booked Appoinments" />
+        <activity
+            android:name=".list_mrecord"
+            android:label="My Medical Records" />
+        <activity
+            android:name=".feedback"
+            android:label="Help / Feedback" />
+        <activity
+            android:name=".symptoms"
+            android:label="Record Symptoms"></activity>
+        <activity android:name=".orderrefills"
+            android:label="Order Refills"></activity>
+    </application>
+
+</manifest>

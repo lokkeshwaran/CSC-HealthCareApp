@@ -1,0 +1,129 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#006080"
+    tools:context=".MainActivitylogin">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Patient ID"
+        android:id="@+id/username"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="10dp"
+        android:id="@+id/username_field"
+        android:singleLine="true"
+        android:layout_below="@+id/username"
+        android:layout_alignLeft="@+id/username"
+        android:background="#ffffff"
+        android:layout_alignStart="@+id/username" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="password"
+        android:id="@+id/password"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:layout_below="@+id/username_field"
+        android:layout_alignLeft="@+id/username_field"
+        android:layout_alignStart="@+id/username_field"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="10dp"
+        android:singleLine="true"
+        android:id="@+id/password_field"
+
+        android:background="#ffffff"
+        android:layout_below="@+id/password"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignStart="@+id/password" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="10dp"
+        android:layout_height="60dp"
+        android:text="login"
+        android:textStyle="bold"
+        android:id="@+id/login"
+        android:layout_below="@+id/password_field"
+        android:layout_centerHorizontal="true"
+
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not a user? Register now."
+
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:id="@+id/textView"
+        android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Patient Registration"
+        android:layout_marginRight="0dp"
+        android:layout_marginEnd="10dp"
+        android:textStyle="bold"
+        android:id="@+id/register_button"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:layout_width="75sp"
+        android:layout_height="75sp"
+        android:id="@+id/imageView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="HealthCare++"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Incrementing HealthTeleCare Services"
+        android:textColor="#fff"
+        android:id="@+id/textView6"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

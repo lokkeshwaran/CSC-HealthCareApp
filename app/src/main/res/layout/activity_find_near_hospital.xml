@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!-- Show on Map button -->
+    <Button android:id="@+id/btn_show_map"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/buttonclickgreen"
+        android:text="View Hospitals on Map"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dip"
+        android:layout_marginLeft="5dip"
+        android:textColor="#d9d9d9"
+        android:layout_marginRight="5dip"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <!--  List view -->
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_show_map"/>
+
+
+
+</RelativeLayout>
